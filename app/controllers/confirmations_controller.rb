@@ -31,7 +31,7 @@ class ConfirmationsController < Milia::ConfirmationsController
        !::Milia.use_invite_member ||
        @confirmable.skip_confirm_change_password
       log_action( "devise pass-thru" )
-      self.resource_class.confirm_by_token(params[:confirmation_token])
+      self.resource = resource_class.confirm_by_token(params[:confirmation_token])
       yield resource if block_given?
 
       if resource.errors.empty?

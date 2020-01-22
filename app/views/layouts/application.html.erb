@@ -27,14 +27,14 @@
         </button>
         <a class="navbar-brand" href="#">SaasProjectApp</a>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
-          <ul class="nav navbar-bar">
+          <ul class="nav navbar-bar col-md-8">
             <% if current_user %>
-              <li>
-                <%= link_to "<i class='fa fa-users'></i> Add Members".html_safe,
+              <li class="col-md-4">
+                <%= link_to "<i class='glyphicon glyphicon-user'></i> Add Members".html_safe,
                 new_member_path,
                 class: 'navbar-link btn btn-primary' %>
               </li>
-            <% end %>          
+            <% end %>
           </ul>
           <ul class="nav navbar-right col-md-4">
             <% if current_user %>

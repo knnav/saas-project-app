@@ -12,4 +12,7 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require jquery
+//= require twitter/bootstrap
+//= require bootstrap-datepicker
 //= require_tree .
